@@ -1,3 +1,5 @@
+*** DOTNET ***
+
 dotnet new sln
 mkdir src
 
@@ -14,3 +16,13 @@ dotnet sln add test/TextAdventureTests/TextAdventureTests.csproj
 dotnet add reference ../../src/TextAdventureTwo/TextAdventureTwo.csproj
 
 dotnet test
+
+*** GIT ***
+
+echo "# TextAdventureTwo" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/FunnyHatProgrammer/TextAdventureTwo.git
+git push -u origin main
