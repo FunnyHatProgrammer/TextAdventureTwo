@@ -1,0 +1,16 @@
+dotnet new sln
+mkdir src
+
+dotnet new console -o src/Sample.Console
+dotnet sln add src/Sample.Console/Sample.Console.csproj
+
+dotnet build
+dotnet run --project src/TextAdventureTwo/TextAdventureTwo.csproj
+
+mkdir test
+dotnet new xunit -o test/TextAdventureTests
+dotnet sln add test/TextAdventureTests/TextAdventureTests.csproj
+
+dotnet add reference ../../src/TextAdventureTwo/TextAdventureTwo.csproj
+
+dotnet test
