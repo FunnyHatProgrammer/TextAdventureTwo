@@ -31,3 +31,20 @@ git push -u origin main
 dotnet new gitignore
 git rm -rf --cached .
 git add .
+
+*** Branching ***
+git checkout -b iss53
+->
+git branch iss53
+git checkout iss53
+
+*** Merge ***
+git checkout main
+git merge WhyDIIsNecessary
+
+git branch -d WhyDIIsNecessary
+git branch -D WhyDIIsNecessary 
+(--delete --force)
+
+
+
