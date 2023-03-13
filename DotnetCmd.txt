@@ -26,3 +26,8 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/FunnyHatProgrammer/TextAdventureTwo.git
 git push -u origin main
+
+*** added gitignore ***
+dotnet new gitignore
+git rm -rf --cached .
+git add .
